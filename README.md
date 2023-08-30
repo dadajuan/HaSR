@@ -3,7 +3,7 @@ This is the code for the cross-modal super-resolution reconstruction.
 
 ## **Seup
 We run the program on a desktop using python.
-###Environment requirements:
+***Environment requirements:
 
 Torch                   1.8.0+cu111
 Torchvision             0.9.0+cu111
@@ -20,6 +20,7 @@ scipy                   1.2.1
 Then, conduct the training for stage 2, which involves independently running the following several programs.
 ### Train the LR and Haptic encoder network.
   ···python s2_1_lr_fenlei.py
+  
   ···python s2_2t_fenlei.py
 
 ### Train the mapping network.
@@ -27,6 +28,7 @@ Then, conduct the training for stage 2, which involves independently running the
   
 ### Train the whole network.
  ···python s2_fusion_network.py
+ 
  ···python s2_train_fine-tuning.py
   
 ## **Evaluation:
